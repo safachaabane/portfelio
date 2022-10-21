@@ -20,7 +20,7 @@
         border-right: 1px solid $gray !important;
   
         position: absolute;
-        z-index: 500000;
+        z-index: 500;
       right: 0;
         display: block;
 
@@ -37,7 +37,7 @@
   background-size: 20px;
   background-repeat: no-repeat;
         position: absolute;
-        z-index: 50000000000 !important;
+        z-index: 50 !important;
       left: 95%;
         display: block;
         @media screen and (max-width: 770px) {

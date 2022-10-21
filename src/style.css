@@ -89,6 +89,7 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  z-index: 10000000000000000000 !important;
 }
 
 .navbar-toggler {
@@ -185,10 +186,13 @@ margin-left: 8px !important;
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 50%;
+  justify-content: center !important;
+  text-align: center !important;
+  margin: auto !important;
+  display: block !important;
   width: 150px;
-}
 
+}
 .navbar-nav .nav-item a {
   font-weight: 400;
   transition: all 0.3s ease-out 0s;
@@ -214,6 +218,11 @@ margin-left: 8px !important;
   width: 100%;
 }
 
+  @media (max-width: 1200px) {
+    .ms-auto{
+   background-color:#0D1A26 !important;
+  }
+}
 
 
 
