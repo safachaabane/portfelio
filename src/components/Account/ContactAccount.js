@@ -9,9 +9,9 @@ function ContactAccount() {
   const [active, setActive] = useState(true);
   const pRef = useRef();
   function outsidePClick() {
- 
+    if(!active){
     setActive(!active);
-
+    }
   }
   useOutsideClick(pRef, outsidePClick);
   return (

@@ -35,6 +35,10 @@ border-image: radial-gradient(rgb(10, 109, 120), rgb(250,224,66)) 1;
 
       }
     }
+    .nav-item >.nav-link.active{
+        background-color: $gray-1 !important;
+        color: black !important;
+      }
 
 }
     .home-about-description-desc{
@@ -54,11 +58,7 @@ border-image: radial-gradient(rgb(10, 109, 120), rgb(250,224,66)) 1;
     background-color: $gray-1 !important;
     color: black !important;
 }
- 
-.nav-link.active{
-    background-color: $gray-1 !important;
-    color: black !important;
-  }
+
 
 .nav-item >button{
     color: white !important;
