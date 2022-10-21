@@ -97,6 +97,9 @@ margin-top: -30px !important;
     /* background-image: var(--image-gradient), url('../../Assets/bg2.jpg'); */
     background-position: top center;
     background-repeat: no-repeat;
+    @media (max-width: 767px) {
+    padding-top: 40px;
+      }
    &::after {
       content: "";
 

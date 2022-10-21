@@ -149,9 +149,9 @@ margin-left: 8px !important;
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
+    padding: 0.5rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #0D1A26 !important;
+
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
