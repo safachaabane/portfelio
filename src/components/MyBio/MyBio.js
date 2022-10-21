@@ -8,12 +8,12 @@ function Aboutme() {
     <Container fluid className="home-about-section" id="bio">
       <Container>
         <Row>
-          <Col md={5}>
+          <Col md={10} lg={5} >
           <div className="bio-img-border">
           <img className="bio-img" src={about} alt="about" />
           </div>
           </Col>
-          <Col md={7} className="home-about-description">
+          <Col  md={12} lg={7} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" , paddingBottom:"1.5em"}}>
               My <span className="teal"> bio </span>
             </h1>
