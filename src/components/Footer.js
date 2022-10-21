@@ -5,15 +5,19 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiEnvelope } from "react-icons/bi";
-
+import logo from "../Assets/logosafa1.png";
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
     <Container fluid className="footer">
+      <div className="footer-logo">
+        <img src={logo} alt="logo" />
+      </div>
+      <Container>
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>By Dhruv Ramu</h3>
+          <h3>By Chaabane Safa</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}</h3>
@@ -22,17 +26,17 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/Dhruvsr"
+                href="https://github.com/safachaabane"
                 style={{ color: "white" }}
                 target="_blank" 
-                rel="noopener noreferrer"
+                rel="noopener noreferrer" 
               >
                 <AiFillGithub />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/dhruv-ramu-1a325622a/"
+                href="https://www.linkedin.com/in/safa-chaabane-2a2437144"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -42,7 +46,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="mailto:dhruv@thegeekly.net"
+                href="mailto:safa1chaabane@gmail.com"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -53,6 +57,7 @@ function Footer() {
           </ul>
         </Col>
       </Row>
+      </Container>
     </Container>
   );
 }

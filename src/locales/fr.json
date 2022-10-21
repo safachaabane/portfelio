@@ -1,0 +1,208 @@
+{"header":{
+    "title":"hello en"
+},
+"project":{
+    "projectList":[
+    {"id":1,
+    "imgPath":"/images/Projects/project1.jpg",
+    "title":"Exact global partners",
+    "demoLink":"https://preview.exactt-global-partners.eyespot.agency/",
+    "listlogo":["gatsby","react","strapi","tagmanager","analytics"]},
+    {"id":2,
+    "imgPath":"/images/Projects/project2.jpg",
+    "title":"Elife foundation",
+    "demoLink":"https://elife.fondationtunisie.org/",
+    "listlogo":["gatsby","react","strapi"]},
+    {"id":"3",
+    "imgPath":"/images/Projects/project3.jpg",
+    "title":"Horizon europe",
+    "demoLink":"https://dev.serviced.horizon-europe.eyespot.agency/",
+    "listlogo":["gatsby","react","strapi"]},
+    {"id":4,
+    "imgPath":"/images/Projects/project4.jpg",
+    "title":"LUXOR Technology and Trade",
+    "demoLink":"https://preview.luxor.eyespot.agency/",
+    "listlogo":["gatsby","react","diractus"]},
+    {"id":5,
+    "imgPath":"/images/Projects/project5.jpg",
+    "title":"Atelier.EXE",
+    "demoLink":"https://preview.atelier.eyespot.agency/",
+    "listlogo":["gatsby","react","strapi"]},
+    {"id":6,
+    "imgPath":"/images/Projects/project6.jpeg",
+    "title":"Ami assurances",
+    "demoLink":"https://www.assurancesami.com/",
+    "listlogo":["gatspy","react","strapi"]},
+    {"id":7,
+    "imgPath":"/images/Projects/project7.jpg",
+    "title":"CRUD Movies ",
+    "demoLink":"https://netflix121.herokuapp.com/",
+    "listlogo":["react","bootstrap","mongo"]}
+
+]
+},
+"skills":{
+    "title":"Skills",
+    "listskills":[
+        {
+        "id":1,
+    "title1":"MARKUP / STYLING LANGUAGE",
+    "list":[{
+"iditem":1,
+"item":"HTML",
+"imgicon":"html"
+    },
+    {
+        "iditem":2,
+        "item":"CSS",
+        "imgicon":"css"
+            },
+            {
+                "iditem":3,
+                "item":"SASS",
+                "imgicon":"sass"
+                    }
+]
+},
+{
+    "id":2,
+"title1":"CSS FRAMEWORK",
+"list":[{
+"iditem":1,
+"item":"BOOTSTRAP",
+"imgicon":"bootstrap"
+},
+{
+    "iditem":2,
+    "item":"BOOTSTRAP REACT",
+    "imgicon":"bootstrapreact"
+    },
+    {
+        "iditem":3,
+        "item":"MATERIAL UI",
+        "imgicon":"mui"
+        }
+]
+},
+{
+    "id":3,
+"title1":"FRONTEND FRAMEWORK",
+"list":[{
+"iditem":1,
+"item":"REACT JS",
+"imgicon":"reactjs"
+},
+{
+    "iditem":2,
+    "item":"REDUX",
+    "imgicon":"redux"
+    }
+]
+},
+{
+    "id":4,
+"title1":"PROGRAMMING LANGUAGE",
+"list":[{
+"iditem":1,
+"item":"JAVA SCRIPT",
+"imgicon":"js"
+},
+{
+    "iditem":2,
+    "item":"PHP",
+    "imgicon":"php"
+    }
+]
+},
+{
+    "id":5,
+"title1":"CONTENT MANAGER",
+"list":[{
+"iditem":1,
+"item":"GATSBY",
+"imgicon":"gatsby"
+}
+]
+},
+{
+    "id":6,
+"title1":"BACKEND FRAMEWORK",
+"list":[{
+"iditem":1,
+"item":"LARAVEL",
+"imgicon":"laravel"
+},
+{
+    "iditem":2,
+    "item":"NODEJS",
+    "imgicon":"nodejs"
+    }
+]
+},
+{
+    "id":7,
+"title1":"VERSION CONTROL",
+"list":[{
+"iditem":1,
+"item":"GIT",
+"imgicon":"git"
+}
+]
+},
+{
+    "id":9,
+"title1":"CMS ",
+"list":[{
+"iditem":1,
+"item":"STRAPI",
+"imgicon":"strapi"
+},{
+    "iditem":2,
+    "item":"DIRECTUS",
+    "imgicon":"directus"
+    }
+]
+},
+{
+    "id":10,
+"title1":" DBMS ",
+"list":[{
+"iditem":1,
+"item":"MySQL",
+"imgicon":"mysql"
+},
+{
+    "iditem":2,
+    "item":"MongoDB",
+    "imgicon":"mongodb"
+    }
+]
+}
+]
+},
+"education":{
+    "title":"Eductional",
+    "list":[
+{"id":1,"titleformation":"Full stack developer","nameinstitute":"Go My Code Sfax","date":"March-2021 --> Aug-2021"},
+{"id":2,"titleformation":"master's degrees in computer science and multimedia","nameinstitute":"Higher Institute of Computer Science and Multimedia of Sfax","date":"Sep-2018 --> Dec-2021"},
+{"id":3,"titleformation":"Bachelor's degree in Computer Science and Multimedia.","nameinstitute":"Higher Institute of Computer Science and Multimedia of Sfax","date":"Sep-2015 --> June-2018"}
+    ]
+},
+"experience":{
+    "title":"Experience",
+    "list":[
+{"id":1,"titleexperience":"Web developer","namesociete":"EMIKETIC","date":"since may","description":"Develop a responsive site: react js (Gatsby). Creation and execution a Google app scripts. Improving the accessibility of a website and its SEO. Handling APIs via rest api and graphQl"},
+{"id":2,"titleexperience":"Graphic designer","namesociete":"SOFTHYMA","date":"1 month","description":"Creation of advertising posters and graphic charters"},
+{"id":3,"titleexperience":"Traineeship","namesociete":"Digital Research Center Sfax (CRNS)","date":"9 months", "description":"Creation of Explainable VAE algorithme for Representation Learning: Deep Learning"},
+{"id":3,"titleexperience":"Traineeship","namesociete":"EDS (Expert Dev Solutions)","date":"1 month", "description":"Creation of web application for managing the production of a factory manufacturing electrical materials from a plastic raw material: CodeIgniter,MySQL"},
+{"id":3,"titleexperience":"Traineeship","namesociete":"Maisonduweb","date":"1 month", "description":"Creation of Hotel booking web application: Laravel, MySQL"}
+    ]
+},
+"otherskills":{
+    "title":"Soft skills",
+    "list":[
+{"id":1,"titleskills":"Communication & Interpersonal skills","description":"Have the ability to successfully express the desired message while keeping the listener engaged."},
+{"id":2,"titleskills":"Quick & Visual Learner","description":"I am a strong visual learner who is driven to tackle challenges and find an efficient solution rapidly."}
+ ]
+}
+}

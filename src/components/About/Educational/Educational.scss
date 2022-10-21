@@ -1,0 +1,56 @@
+@import "../../../global-variable.scss";
+.education-section{
+    color: $white;
+    &-list{
+    text-align: left;
+    margin-top: 50px;
+    &-date{
+        position: relative;
+        p{
+        background-color: rgba(250,224,66,0.8);
+        padding:8px;
+        border-radius: 15px;
+        font-size: 15px;
+        }
+    }
+    &-date::after {
+        content: "";
+       top: 30px;
+        height: 100% !important;
+        border-right: 1px solid $gray !important;
+  
+        position: absolute;
+        z-index: 500000;
+      right: 0;
+        display: block;
+
+        @media screen and (max-width: 770px) {
+            display: none;
+        }
+      
+    }
+    &-date::before {
+        content: "";
+        height: 100% !important;
+        width: 100%;
+        background-image: url('../../../Assets//circle.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+        position: absolute;
+        z-index: 50000000000 !important;
+      left: 95%;
+        display: block;
+        @media screen and (max-width: 770px) {
+            display: none;
+        }
+       
+      }
+    &-description{
+padding-left: 100px;
+
+p{
+    margin-left: 20px;
+}
+}
+    }
+}

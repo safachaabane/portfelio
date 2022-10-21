@@ -2,27 +2,26 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+import logo from '../Assets/logosafa1.png'
+import CV from '../Assets/CVsafa.pdf';
+import {Link} from 'react-scroll'
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineContacts,
 } from "react-icons/ai";
-import { BiDonateHeart } from "react-icons/bi";
+import {BiDownload, BiOutline } from "react-icons/bi";
 
-import { CgFileDocument } from "react-icons/cg";
-
+import { useTranslation } from "react-i18next";
+//style
+import './Navbar.scss';
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
   function scrollHandler() {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 40) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
@@ -30,17 +29,52 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+  const {i18n}= useTranslation();
+  const [isLanguageOpen,setIsLanguageOpen]= useState(false);
 
+// select language :
+function SelectLanguage() {
+  return (
+    <button
+      type="button"
+      className="select-lang"
+      onClick={() => setIsLanguageOpen(!isLanguageOpen)}
+    >
+      {i18n.language}
+      {isLanguageOpen && (
+        <div
+          className={`select-lang-options ${isLanguageOpen ? 'active' : ''}`}
+        >
+          <button
+            type="button"
+            className="select-lang__button"
+            onClick={() => {i18n.changeLanguage('en'); updateExpanded(false)}}
+          >
+            EN 
+          </button>
+          <button
+            type="button"
+            className="select-lang__button"
+            onClick={() =>{ i18n.changeLanguage('fr'); updateExpanded(false)}}
+          >
+            FR
+          </button>
+        </div>
+      )}
+    </button>
+  );
+}
+  
   return (
     <Navbar
       expanded={expand}
       fixed="top"
-      expand="md"
+      expand="xs"
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={logo} className="navbar-logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -49,73 +83,68 @@ function NavBar() {
           }}
         >
           <span></span>
-          <span></span>
+          <span className="navbar-menu"></span>
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Link className="nav-link" activeClass="active" to="home"  spy={true} smooth={true} duration={0} onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
+              </Link>
             </Nav.Item>
-
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
+              <Link className="nav-link"
+               to="bio" spy={true} smooth={true}  offset={-80} duration={0}
+               onClick={() => updateExpanded(false)}
+              >
+                <BiOutline
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Bio
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link className="nav-link"
+               to="about" spy={true} smooth={true}  offset={-80} duration={0}
+                onClick={() =>updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
+              </Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
+         
+                 <Nav.Item>
+              <Link className="nav-link"
+               to="projects" spy={true} smooth={true} duration={0}
+                onClick={() =>updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
-              </Nav.Link>
+              </Link>
             </Nav.Item>
-
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="src\components\Service"
-                onClick={() => updateExpanded(false)}
+              <Link className="nav-link"
+               to="contact" spy={true} smooth={true} duration={0}
+                onClick={() =>updateExpanded(false)}
               >
-                <BiDonateHeart
+                <AiOutlineContacts
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Service
-              </Nav.Link>
+                Contact
+              </Link>
             </Nav.Item>
-
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://thegeekly.net"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Magazine
-              </Nav.Link>
-            </Nav.Item>
-
             <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/Dhruvsr"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
+              <a href={CV} className="fork-btn-inner" download="Cv safa.pdf"> 
+              <BiDownload fontSize="25px"/>
+                {" "}
+               CV
+ </a>
+            </Nav.Item>
+            <Nav.Item >
+           <SelectLanguage/>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

@@ -2,29 +2,50 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Service from "./components/Service/Service";
-
+import ContactAccount from "./components/Account/ContactAccount";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
+
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Aboutme from "./components/About/Aboutme";
+import MyBio from "./components/MyBio/MyBio";
+import Certeficat from "./components/Certeficat/Certeficat";
+import Contact from "./components/Contact/Contact";
+
+import { FaAngleUp } from "react-icons/fa";
+
+
 
 function App() {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+  useEffect(() => {
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > 400) {
+				setShowTopBtn(true);
+			} else {
+				setShowTopBtn(false);
+			}
+		});
+	}, []);
+  	// fucntion to help scroll to top smoothly
+	const goToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+	};
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
-    }, 1200);
+    }, 600);
 
     return () => clearTimeout(timer);
   }, []);
@@ -35,13 +56,23 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
-        <Routes>
+        {showTopBtn && (
+				<FaAngleUp className="icon-position icon-style" onClick={goToTop} />
+			)}
+        <ContactAccount/>
+        <Home/>
+        <MyBio/>
+        <Aboutme/>
+        <Certeficat/>
+        <Projects/>
+        <Contact/>
+
+        {/* <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Service />} />
+          <Route path="/Project" element={<Projects />} />
+          <Route path="/Aboutme" element={<Aboutme />} />
           <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
+        </Routes> */}
         <Footer />
       </div>
     </Router>

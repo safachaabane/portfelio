@@ -1,0 +1,110 @@
+
+
+@import "../../global-variable.scss";
+.certeficat {
+font-family: $primary-font !important;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  &-home{
+    background-image: url('../../Assets/bg6.jpg');
+    background-size: cover;
+    padding-bottom: 60px !important;
+  }
+&-title{
+    margin: 70px auto;
+    color: $white;
+    text-align: center;
+    font-size: 3.2em;
+    max-width: 600px;
+    position: relative;
+  }
+  &-title:before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background: $bleu;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+  }
+  &-title:after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background: $bleu;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+  }
+}
+
+.scroll-parent {
+  position: relative;
+  width: 100vw;
+  height: 22rem;
+  padding: 2rem 0;
+  overflow-x: hidden;
+  background-color: $gray-1;
+  border-radius: 40px;
+  margin-bottom: 70px !important;
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  
+
+}
+
+.scroll-element img {
+  width: 15%;
+  @media screen and (max-width: 992px) {
+    width: 80%;
+}
+
+}
+
+.primary {
+
+  animation: primary 3s linear infinite;
+}
+
+.primary:hover{
+  
+       animation-play-state:paused;
+    
+  }
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -30%;
+  }
+}
+
+
+.first{
+    margin: 20px;
+}
+.first:hover {
+    transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    @media screen and (max-width: 992px) {
+        transform: scale(1.2);
+    }
+  }
