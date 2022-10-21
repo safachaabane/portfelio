@@ -38,6 +38,9 @@ padding: 20px 0;
   #toggle {
     position: absolute;
     writing-mode: vertical-rl; 
+    @media screen and (max-width: 770px) {
+      margin-left: -20px;
+  }
   }
   .animate-charcter
 {   
@@ -61,7 +64,6 @@ padding: 20px 0;
 font-weight: 700;
 font-size: 30px;
 cursor: pointer;
-    
 }
 
 @keyframes textclip {

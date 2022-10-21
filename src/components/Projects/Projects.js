@@ -8,7 +8,7 @@ function Projects() {
   const {projectList}=t('project',{returnObjects:true});
   function Project() {
     return projectList.map(({ id, imgPath, title,demoLink,listlogo }) => (
-      <Col md={4} key={id} className="gridscroll-item">
+      <Col md={4} xs={10} key={id} className="gridscroll-item">
       <ProjectCard
                   imgPath={imgPath}
                   isBlog={false}

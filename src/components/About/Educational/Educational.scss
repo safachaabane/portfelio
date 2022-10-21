@@ -47,6 +47,9 @@
       }
     &-description{
 padding-left: 100px;
+@media screen and (max-width: 770px) {
+    padding-left: 10px;
+}
 
 p{
     margin-left: 20px;

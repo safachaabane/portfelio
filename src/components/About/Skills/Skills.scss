@@ -10,6 +10,9 @@
         display: inline-block;
         position: relative;
         height: 400px;
+        @media screen and (max-width: 770px) {
+          height: auto;
+      }
     }
     &-item:nth-child(2n+1)::after {
         content: "";

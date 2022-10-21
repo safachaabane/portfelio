@@ -3,10 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import Type from "./Type";
 import profil from "../../Assets/profil2.png";
 // import arrow from "../../Assets/arrow.gif"
+import { useTranslation } from 'react-i18next';
 import "./Home.scss"
 
 function Home() {
-
+  const {t}= useTranslation();
+  const {greeting,iam}=t('home',{returnObjects:true});
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -16,14 +18,14 @@ function Home() {
             <Col lg={7} md={12} className="home-header">
               <div className="home-section-h1"> {"<h1>"}</div>
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Greetings.{" "}
+                {greeting}.{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋
                 </span>
               </h1>
 
               <h1 className="heading-name">
-              I am
+              {iam}
                 <strong className="main-name"> Chaabane Safa</strong>
               </h1>
               <div style={{ padding: 50, textAlign: "left" }}>

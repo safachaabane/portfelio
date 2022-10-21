@@ -1,6 +1,20 @@
 {"header":{
     "title":"hello en"
 },
+"home":{
+    "iam":"je suis",
+    "greeting":"Salut",
+    "item1":"Développeur Front-end",
+    "item2":"Développeur web",
+    "item3":"Développeur Full stack"
+},
+"bio":{
+    "title1":"Ma",
+    "title2":" Biographie",
+    "description1":"Je suis un développeur Full Stack basé à Nabeul en Tunisie. Avec un focus sur le développement Front End. Je connais bien une variété de front-end et de langages, de frameworks réactifs et de systèmes de gestion de bases de données. Mon objectif est simple d'utiliser mes compétences de développement et d'analyse pour améliorer les performances de l'entreprise en tant que développeur.",
+    "description2":"Bien que je connaisse bien une variété de langages de programmation, mon expertise principale est en HTML/CSS, Bootstrap, JavaScript, React.js, Gatsby, nodeJs .",
+    "description3":"En mettant l'accent sur 'l'amélioration progressive', je m'efforce de trouver des méthodes innovantes pour repousser mes limites tout en respectant les normes de code appropriées. Dans une quête pour me tenir toujours à jour, je lis des livres et assiste à des séminaires et à des rencontres."
+},
 "project":{
     "projectList":[
     {"id":1,
