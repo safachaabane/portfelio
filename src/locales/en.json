@@ -46,7 +46,7 @@
     "imgPath":"/images/Projects/project6.jpeg",
     "title":"Ami assurances",
     "demoLink":"https://www.assurancesami.com/",
-    "listlogo":["gatspy","react","strapi"]},
+    "listlogo":["gatsby","react","strapi"]},
     {"id":7,
     "imgPath":"/images/Projects/project7.jpg",
     "title":"CRUD Movies ",

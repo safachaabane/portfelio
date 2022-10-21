@@ -2,6 +2,7 @@
 html {
   /* this enables some alternative styles and contextual characters to the font */
   font-feature-settings: 'ss01', 'ss02', 'case', 'salt';
+  overflow-x: hidden;
 }
 body {
   margin: 0;

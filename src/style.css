@@ -223,7 +223,9 @@ margin-left: 8px !important;
    background-color:#0D1A26 !important;
   }
 }
-
+.nav-link.active{
+  background-color: transparent !important;
+}
 
 
 .home-social-icons {

@@ -17,8 +17,10 @@ function ProjectCards(props) {
         </Card.Text>
         <div>
      {props.ghLink.map(item =>
-
-     <img className="project-listimg" src={`/images/Projects/listIcon/${item}.png`} alt="" />)
+     <div className="project-list">
+     <img className="project-list-img" src={`/images/Projects/listIcon/${item}.png`} alt="" />
+     <p className="project-list-nameimg">{item}</p>
+     </div>)
      }
      </div>
       </Card.Body>

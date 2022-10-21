@@ -37,9 +37,21 @@
    
 }
 .project{
-  &-listimg{
+  &-list{
+    display: inline-block;
+    
+  &-img{
    
     height: 50px;
     padding: 10px;
   }
+  &-nameimg{
+    font-size: 10px;
+  
+  }
+  &-nameimg::first-letter {
+    text-transform: uppercase;
+ 
+  }
+}
 }

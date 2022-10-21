@@ -15,7 +15,7 @@
     }
     &-date::after {
         content: "";
-       top: 30px;
+       top: 45px;
         height: 100% !important;
         border-right: 1px solid $gray !important;
   
@@ -39,6 +39,7 @@
         position: absolute;
         z-index: 50 !important;
       left: 95%;
+      top: 10px;
         display: block;
         @media screen and (max-width: 770px) {
             display: none;
