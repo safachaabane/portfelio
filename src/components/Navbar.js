@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from '../Assets/logosafa1.png'
-import CV from '../Assets/CVsafa.pdf';
+import CV from '../Assets/CVsafe.pdf';
 import {Link} from 'react-scroll'
 import {
   AiOutlineHome,
