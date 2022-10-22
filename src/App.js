@@ -19,11 +19,13 @@ import Certeficat from "./components/Certeficat/Certeficat";
 import Contact from "./components/Contact/Contact";
 
 import { FaAngleUp } from "react-icons/fa";
-
-
-
+import ReactGA from 'react-ga';
 function App() {
   const [showTopBtn, setShowTopBtn] = useState(false);
+  const setGA = () => {
+    ReactGA.initialize('UA-246586549-1');
+    ReactGA.pageview('Init page view');
+  };
   useEffect(() => {
 		window.addEventListener('scroll', () => {
 			if (window.scrollY > 400) {
@@ -32,6 +34,7 @@ function App() {
 				setShowTopBtn(false);
 			}
 		});
+    setGA();
 	}, []);
   	// fucntion to help scroll to top smoothly
 	const goToTop = () => {
