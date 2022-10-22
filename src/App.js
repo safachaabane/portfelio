@@ -31,7 +31,6 @@ function App() {
 			if (window.scrollY > 400) {
 				setShowTopBtn(true);
 			} else {
-        
 				setShowTopBtn(false);
 			}
 		});
