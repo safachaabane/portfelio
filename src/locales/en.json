@@ -110,7 +110,12 @@
     "iditem":2,
     "item":"REDUX",
     "imgicon":"redux"
-    }
+    },
+    {
+        "iditem":3,
+        "item":"ANGULAR",
+        "imgicon":"angular"
+        }
 ]
 },
 {
@@ -123,6 +128,11 @@
 },
 {
     "iditem":2,
+    "item":"TYPE SCRIPT",
+    "imgicon":"typescript"
+    },
+{
+    "iditem":3,
     "item":"PHP",
     "imgicon":"php"
     }
