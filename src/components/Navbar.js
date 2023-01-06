@@ -4,6 +4,9 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from '../Assets/logosafa1.png'
 import CV from '../Assets/CV Safa Chaabane.pdf';
+import en from "../Assets/en.png";
+import fr from "../Assets/fr.png";
+import arrowd from "../Assets/arrowd.png";
 import {Link} from 'react-scroll'
 import {
   AiOutlineHome,
@@ -39,8 +42,8 @@ function SelectLanguage() {
       type="button"
       className="select-lang"
       onClick={() => setIsLanguageOpen(!isLanguageOpen)}
-    >
-      {i18n.language}
+    > 
+      {i18n.language}<img className="arrow-down" src={arrowd} alt="arrow down" />
       {isLanguageOpen && (
         <div
           className={`select-lang-options ${isLanguageOpen ? 'active' : ''}`}
@@ -50,6 +53,7 @@ function SelectLanguage() {
             className="select-lang__button"
             onClick={() => {i18n.changeLanguage('en'); updateExpanded(false)}}
           >
+          <img className="arrow-down" src={en} alt="en" />
             EN 
           </button>
           <button
@@ -57,6 +61,7 @@ function SelectLanguage() {
             className="select-lang__button"
             onClick={() =>{ i18n.changeLanguage('fr'); updateExpanded(false)}}
           >
+           <img className="arrow-down" src={fr} alt="fr" />
             FR
           </button>
         </div>

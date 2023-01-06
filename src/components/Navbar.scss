@@ -4,7 +4,7 @@
     border: none;
     outline: none;
     text-transform: capitalize;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -35,7 +35,7 @@
       top: 100%;
       left: 0;
       background-color: rgba(219, 238, 191, 0.177);
-      width: 50px;
+      width: 150px;
       border-radius: 2px;
       overflow: hidden;
       display: none;
@@ -43,7 +43,7 @@
       transition: opacity 0.2s ease-in-out;
       margin-top: 0;
       box-shadow: 0px 0px 40px -8px rgba(0, 0, 0, 0.1);
-
+      transform: translateX(-35px);
   
       &.active {
         display: block;
@@ -71,10 +71,11 @@
       text-align: center;
       align-items: center;
       justify-content: center;
-      padding: 0.4em 0.4em 0.2em 0.4em;
+      margin: auto;
+     
       color: white;
       transition: all 0.2s ease-in-out;
-      margin-top: 0.5rem;
+     
       font-weight: 600;
       font-size: 14px;
   
@@ -132,4 +133,8 @@
 .fork-btn-inner::after {
   display: none !important;
 }
-  
+.arrow-down{
+  display: inline-block;
+  width: 20px;
+  margin-left: 10px;
+}
