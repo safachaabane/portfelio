@@ -7,6 +7,9 @@ import "./MyBio.scss";
 function Aboutme() {
   const {t}= useTranslation();
   const {title1,title2,description1,description2,description3}=t('bio',{returnObjects:true});
+  const {i18n}= useTranslation();
+  console.log(i18n.languages.toString())
+
   return (
     <Container fluid className="home-about-section" id="bio">
       <Container>
@@ -16,8 +19,8 @@ function Aboutme() {
           <img className="bio-img" src={about} alt="about" />
           </div>
           </Col>
-          <Col  md={12} lg={7} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" , paddingBottom:"1.5em"}}>
+          <Col  md={12} lg={7} className={`${i18n.languages.toString()==="en" ?"home-about-description" : "home-about-descriptionfr"}`}>
+            <h1 style={{ fontSize: "2.6em" , paddingBottom:`{${i18n.languages.toString()==="en" ?"1.5em" : "0em"}}` }}  >
               {title1} <span className="teal"> {title2} </span>
             </h1>
             <Row  style={{ fontSize: "1.2em"}}>

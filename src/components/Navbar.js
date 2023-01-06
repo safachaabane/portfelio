@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from '../Assets/logosafa1.png'
-import CV from '../Assets/CVsafe.pdf';
+import CV from '../Assets/CV Safa Chaabane.pdf';
 import {Link} from 'react-scroll'
 import {
   AiOutlineHome,
@@ -137,7 +137,7 @@ function SelectLanguage() {
               </Link>
             </Nav.Item>
             <Nav.Item className="fork-btn">
-              <a href={CV} className="fork-btn-inner" download="Cv safa.pdf"> 
+              <a href={CV} className="fork-btn-inner" download="CV Safa Chaabane.pdf"> 
               <BiDownload fontSize="25px"/>
                 {" "}
                CV
